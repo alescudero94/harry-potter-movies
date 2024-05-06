@@ -17,7 +17,7 @@
                     <p><b>{{ movie.title }}</b></p>
                     <div class="movie-information">
                         <small>Release Date: {{movie.release_date}}</small>
-                        <small>Budget: ${{movie.budget}} million</small>
+                        <small>Budget: {{movie.budget | moneyFormat}}</small>
                         <small>Duration: {{movie.duration | transformHour}}</small>
                     </div>
                 </div>

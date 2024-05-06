@@ -2,7 +2,7 @@ export interface Movie {
     id: number;
     title: string;
     duration: string;
-    budget: number;
+    budget: string;
     release_date: string;
     box_office: string;
     cinematographers: string;

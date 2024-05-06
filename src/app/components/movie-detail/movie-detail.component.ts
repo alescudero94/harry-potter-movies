@@ -6,11 +6,12 @@ import { NgIf, CurrencyPipe } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { TransformHourPipe } from '../../pipes/transform-hour.pipe';
+import { MoneyFormatPipe } from '../../pipes/money-format.pipe';
 
 @Component({
   selector: 'hp-movie-detail',
   standalone: true,
-  imports: [NgIf, HttpClientModule, CurrencyPipe, RouterModule, TransformHourPipe],
+  imports: [NgIf, HttpClientModule, CurrencyPipe, RouterModule, TransformHourPipe, MoneyFormatPipe],
   templateUrl: './movie-detail.component.html',
   styleUrl: './movie-detail.component.css'
 })

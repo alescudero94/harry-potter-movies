@@ -17,7 +17,7 @@ export class TransformHourPipe implements PipeTransform {
     const hours = Math.floor(mins / 60);
     const minutesRemaining = mins % 60;
 
-    return `${hours} h ${minutesRemaining} min`;
+    return `${hours}h ${minutesRemaining}min`;
   
 }
 

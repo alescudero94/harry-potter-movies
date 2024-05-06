@@ -6,11 +6,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { TransformHourPipe } from '../../pipes/transform-hour.pipe';
+import { MoneyFormatPipe } from '../../pipes/money-format.pipe';
 
 @Component({
   selector: 'hp-movie-list',
   standalone: true,
-  imports: [NgFor, HttpClientModule, RouterModule, CurrencyPipe, FormsModule, TransformHourPipe],
+  imports: [NgFor, HttpClientModule, RouterModule, CurrencyPipe, FormsModule, TransformHourPipe, MoneyFormatPipe],
   templateUrl: './movie-list.component.html',
   styleUrl: './movie-list.component.css'
 })

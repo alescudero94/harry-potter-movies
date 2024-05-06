@@ -1,0 +1,27 @@
+.content {
+    max-width: 52rem;
+    .content-button {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+    
+    button{
+        background-color: #e4e8f0;
+        color: black;
+    }
+    .content-summary {
+        display: flex;
+    }
+
+    .poster {
+        width: 250px;
+        height: 310px;
+    }
+
+    /* Colors of the table */
+    tr,th,td{
+        background-color: #dcdeec;
+        color: black;
+    }
+}

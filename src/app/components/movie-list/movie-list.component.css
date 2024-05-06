@@ -1,0 +1,26 @@
+.container{
+    max-width: 52rem;
+    .content{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0.625rem;
+        .movie-information{
+            display: flex;
+            gap: 0.625rem;
+        }
+        button{
+            background-color: #e4e8f0;
+            color: black;
+        }
+    }
+
+    form{
+        background-color: #e8ecf4;
+        color: black;
+        border: none;
+        input{
+            background-color: #f0ecf4;
+            color: black;
+        }
+    }
+}

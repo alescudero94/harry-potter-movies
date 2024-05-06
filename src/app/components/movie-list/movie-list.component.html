@@ -1,0 +1,30 @@
+<div class="container">
+    <div>
+        <form>
+            <legend>Filters</legend>
+            <label for="title">Title</label>
+            <input type="text" id="title" name="searchTitle" placeholder="Title" [(ngModel)]="searchTitle"
+                (input)="filterMovies()" />
+            <label for="year">Release year</label>
+            <input type="number" id="year" name="searchYear" placeholder="Release year" [(ngModel)]="searchYear"
+                (input)="filterMovies()" />
+        </form>
+    </div>
+    <ul>
+        <li *ngFor="let movie of filteredMovies">
+            <div class="content">
+                <div>
+                    <p><b>{{ movie.title }}</b></p>
+                    <div class="movie-information">
+                        <small>Release Date: {{movie.release_date}}</small>
+                        <small>Budget: ${{movie.budget}} million</small>
+                        <small>Duration: {{movie.duration | transformHour}}</small>
+                    </div>
+                </div>
+                <div>
+                    <button [routerLink]="['/movies', movie.id]">Details</button>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

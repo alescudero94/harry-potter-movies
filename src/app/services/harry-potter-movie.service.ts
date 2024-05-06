@@ -8,15 +8,13 @@ import { Movie } from '../models/harry-potter-movie.model';
 })
 export class HarryPotterMovieService {
 
-  private apiUrl = 'http://localhost:4200';
-
   constructor(private http: HttpClient) {}
 
   getMovies(): Observable<Movie[]> {
-    return this.http.get<Movie[]>(`${this.apiUrl}/movies`);
+    return this.http.get<Movie[]>(`/movies`);
   }
 
   getMovieById(id: string): Observable<Movie> {
-    return this.http.get<Movie>(`${this.apiUrl}/movies/${id}`);
+    return this.http.get<Movie>(`/movies/${id}`);
   }
 }
